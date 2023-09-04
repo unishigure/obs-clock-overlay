@@ -4,6 +4,7 @@ import "./style.css";
 import { handjet } from "./fonts";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://unishigure.github.io/obs-clock-overlay/"),
   title: "OBS clock overlay",
   description: "OBS clock overlay For me :)",
   openGraph: {
