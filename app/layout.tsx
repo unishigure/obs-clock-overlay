@@ -9,10 +9,16 @@ export const metadata: Metadata = {
   description: "OBS clock overlay For me :)",
   openGraph: {
     type: "website",
-    images: "/image.png",
-  },
-  twitter: {
-    images: "/image.png",
+    title: "OBS clock overlay",
+    description: "OBS clock overlay For me :)",
+    url: "/",
+    images: [
+      {
+        url: "/image.png",
+        width: "1200",
+        height: "628",
+      },
+    ],
   },
 };
 
