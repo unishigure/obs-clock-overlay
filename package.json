@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "SET NODE_ICU_DATA=node_modules/full-icu && next dev",
-    "build": "SET NODE_ICU_DATA=node_modules/full-icu && next build",
-    "start": "SET NODE_ICU_DATA=node_modules/full-icu && next start",
+    "dev": "NODE_ICU_DATA=node_modules/full-icu next dev",
+    "build": "NODE_ICU_DATA=node_modules/full-icu next build",
+    "start": "NODE_ICU_DATA=node_modules/full-icu next start",
     "lint": "next lint"
   },
   "dependencies": {
