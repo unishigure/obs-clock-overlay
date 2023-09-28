@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "npx serve@latest out",
+    "dev": "SET NODE_ICU_DATA=node_modules/full-icu && next dev",
+    "build": "NODE_ICU_DATA=node_modules/full-icu next build",
+    "start": "NODE_ICU_DATA=node_modules/full-icu next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -16,6 +16,7 @@
     "dayjs": "^1.11.9",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
+    "full-icu": "^1.5.0",
     "next": "13.4.19",
     "postcss": "8.4.29",
     "react": "18.2.0",
