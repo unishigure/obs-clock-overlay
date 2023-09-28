@@ -4,7 +4,7 @@ import "./style.css";
 import { handjet } from "./fonts";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.BASE_URL ? process.env.BASE_URL : ""),
+  metadataBase: new URL(process.env.BASE_URL ? process.env.BASE_URL : "/"),
   title: "OBS clock overlay",
   description: "OBS clock overlay For me :)",
   openGraph: {
