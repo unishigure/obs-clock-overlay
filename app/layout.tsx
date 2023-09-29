@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={handjet.className}>
+      <body className={handjet.className} style={{ background: "inherit" }}>
         {children}
       </body>
     </html>
