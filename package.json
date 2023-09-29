@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "SET NODE_ICU_DATA=node_modules/full-icu && next dev",
+    "dev": "SET NODE_ICU_DATA=node_modules/full-icu && SET BASE_URL=http://localhost:3000 && next dev",
     "build": "NODE_ICU_DATA=node_modules/full-icu next build",
     "start": "NODE_ICU_DATA=node_modules/full-icu next start",
     "lint": "next lint"
