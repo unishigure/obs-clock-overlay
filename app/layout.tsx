@@ -29,7 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={handjet.className}>{children}</body>
+      <body className={handjet.className} style={{ background: "transparent" }}>
+        {children}
+      </body>
     </html>
   );
 }
