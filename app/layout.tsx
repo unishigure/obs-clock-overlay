@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
+import { revalidatePath } from "next/cache";
 
 import "./style.css";
 import { handjet } from "./fonts";
+
+revalidatePath("/", "layout");
 
 export const metadata: Metadata = {
   metadataBase: process.env.BASE_URL ? new URL(process.env.BASE_URL) : null,
@@ -24,9 +27,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="ja">
       <body className={handjet.className} style={{ background: "transparent" }}>

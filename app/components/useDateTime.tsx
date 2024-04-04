@@ -8,7 +8,7 @@ export const useDateTime = (interval: number) => {
     return () => {
       clearTimeout(timeoutId);
     };
-  }, [time]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [interval, time]);
 
   return time;
 };
