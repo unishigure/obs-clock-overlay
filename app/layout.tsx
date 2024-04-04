@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { revalidatePath } from "next/cache";
 
 import "./style.css";
 import { handjet } from "./fonts";
 
-revalidatePath("/", "layout");
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   metadataBase: process.env.BASE_URL ? new URL(process.env.BASE_URL) : null,
