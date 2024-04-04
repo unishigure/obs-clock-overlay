@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./style.css";
 import { handjet } from "./fonts";
 
+export const fetchCache = "force-no-store";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
