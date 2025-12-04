@@ -12,7 +12,7 @@ import { useDateTime } from "./useDateTime";
 export default function DisplayTime() {
   const dateTime = useDateTime(100);
   return (
-    <div className="text-[80px] leading-none" suppressHydrationWarning>
+    <div className="text-[80px] leading-none">
       {dayjs.tz(dateTime, "Asia/Tokyo").format("HH:mm:ss")}
     </div>
   );
