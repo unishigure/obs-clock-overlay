@@ -1,7 +1,7 @@
 "use client";
 
-import DisplayDate from "./components/displayDate";
-import DisplayTime from "./components/displayTime";
+import DisplayDate from "@/app/components/displayDate";
+import DisplayTime from "@/app/components/displayTime";
 
 export default function Home() {
   return (
