@@ -6,11 +6,11 @@ export const useDateTime = (interval: number) => {
   const [time, setTime] = useState(Date.now());
 
   useEffect(() => {
-    const timeoutId = setTimeout(() => setTime(Date.now()), interval);
+    const intervalId = setInterval(() => setTime(Date.now()), interval);
     return () => {
-      clearTimeout(timeoutId);
+      clearInterval(intervalId);
     };
-  }, [interval, time]);
+  }, [interval]);
 
   return time;
 };
