@@ -7,7 +7,7 @@ import timezone from "dayjs/plugin/timezone";
 dayjs.extend(utc);
 dayjs.extend(timezone);
 
-import { useDateTime } from "./useDateTime";
+import { useDateTime } from "@/app/hooks/useDateTime";
 
 export default function DisplayTime() {
   const dateTime = useDateTime(100);
