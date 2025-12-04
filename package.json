@@ -3,25 +3,22 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "SET NODE_ICU_DATA=node_modules/full-icu && SET BASE_URL=http://localhost:3000 && next dev",
-    "build": "NODE_ICU_DATA=node_modules/full-icu next build",
-    "start": "NODE_ICU_DATA=node_modules/full-icu next start",
-    "lint": "next lint"
+    "dev": "bun --bun next dev",
+    "build": "bun --bun next build",
+    "start": "bun --bun next start"
   },
   "dependencies": {
-    "@types/node": "^20.19.25",
-    "@types/react": "^18.3.27",
-    "@types/react-dom": "^18.3.7",
     "autoprefixer": "^10.4.22",
     "dayjs": "^1.11.19",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "^14.2.33",
-    "full-icu": "^1.5.0",
-    "next": "^14.2.33",
-    "postcss": "^8.5.6",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "next": "^16.0.7",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
     "tailwindcss": "^3.4.18",
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7"
   }
 }

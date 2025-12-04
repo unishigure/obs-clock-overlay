@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
-import "./style.css";
-import { handjet } from "./fonts";
+import "@/app/style.css";
+import { handjet } from "@/app/fonts";
 
 export const fetchCache = "force-no-store";
 export const revalidate = 3600;
