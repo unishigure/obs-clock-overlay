@@ -1,18 +1,18 @@
 {
 	"name": "obs-clock-overlay",
 	"version": "2.0.0",
-	"dependencies": {
-		"dayjs": "^1.11.19",
-		"react": "^19.2.1",
-		"react-dom": "^19.2.1",
-		"tailwindcss": "^4.3.3"
-	},
 	"private": true,
 	"scripts": {
 		"dev": "bun ./index.html",
 		"build": "bun run build.ts",
 		"format": "biome check --write",
 		"typecheck": "tsc"
+	},
+	"dependencies": {
+		"dayjs": "^1.11.19",
+		"react": "^19.2.1",
+		"react-dom": "^19.2.1",
+		"tailwindcss": "^4.3.3"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.5.15",
