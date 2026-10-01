@@ -15,4 +15,14 @@ Powered by [Google fonts](https://fonts.google.com/)
 Powered by
 
 - [dayjs](https://day.js.org/)
-- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Bun](https://bun.sh/)
+
+## :hammer: Development
+
+```sh
+bun install
+bun dev        # http://localhost:3000
+bun run build  # output to dist/
+```
